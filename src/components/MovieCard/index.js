@@ -1,6 +1,8 @@
 import Button from '@mui/material/Button'
 import '../../style/movieCard.css'
 import { useEffect, useState } from 'react'
+import Tooltip from '@mui/material/Tooltip'
+
 
 export const MovieCard = ({movie, myFavoriteMovies, setMyFavoriteMovies}) => {
   const [isFavorite, setIsFavorite] = useState(false)
@@ -37,21 +39,27 @@ export const MovieCard = ({movie, myFavoriteMovies, setMyFavoriteMovies}) => {
           <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
       </div>
       <div className="details">
+        <Tooltip title={`${movie.title} (${releaseYear})`} placement="right">
           <h2>{movie.title} ({releaseYear})</h2>
-          <div className="rating">
-              <span>{movie.vote_average} / 10 ({movie.vote_count} votes)</span>
-          </div>
-          <div className="info">
-              <p>{movie.overview}</p>
-          </div>
-          <div className="favorite">
-            <Button variant="outlined" 
-                    sx={{width: '100%'}}
-                    onClick={toggleFavorite}>
-              {isFavorite ? 'Delete from favorites' : 'Add to favorites'}
-            </Button>
-          </div>
+        </Tooltip>
+      <div className="rating">
+          <span>{movie.vote_average} / 10 ({movie.vote_count} votes)</span>
       </div>
+      <div className="tags">
+        <span className="lang">{movie.original_language}</span>
+        {movie.adult && <span className="adult">{movie.adult}</span>}
+      </div>
+      <div className="info">
+          <p>{movie.overview}</p>
+      </div>
+      <div className="favorite">
+        <Button variant="outlined" 
+                sx={{width: '100%'}}
+                onClick={toggleFavorite}>
+          {isFavorite ? 'Delete from favorites' : 'Add to favorites'}
+        </Button>
+      </div>
+    </div>
   </div>
   )
 }

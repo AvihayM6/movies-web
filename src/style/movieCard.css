@@ -45,7 +45,7 @@
     position: absolute;
     padding: 20px;
     width: 100%;
-    height: 330px;
+    height: 360px;
     bottom: -260px;
     left: 0;
     box-sizing: border-box;
@@ -88,6 +88,28 @@
     color: #fff;
     padding: 0 5px;
     font-size: 0.8rem; 
+}
+
+.tags{
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags span{
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 40px;
+}
+
+.tags span.lang{
+    background-color: #7206f7;
+    text-transform: uppercase;
+}
+
+.tags span.action{
+    background-color: #f70661;
 }
 
 .info{
