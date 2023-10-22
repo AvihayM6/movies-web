@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Gabarito:wght@500&family=Nunito:wght@200&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, #224d8c, #245ba3, #236aba, #1f7ad2, #128aeb);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-size: 10px;
+  font-family: 'Agdasima', sans-serif;
+  font-family: 'Gabarito', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}

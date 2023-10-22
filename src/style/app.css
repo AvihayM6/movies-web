@@ -1,0 +1,9 @@
+.center-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center-content h1 {
+    font-size: 1.4rem;
+}
