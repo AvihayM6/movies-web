@@ -4,4 +4,5 @@
 * MaterialUI
 ## Video of project
 
-https://github.com/AvihayM6/movies-web-cellcom/assets/45402007/8754e08d-e774-4a35-983b-2750f0e5454b
+https://github.com/AvihayM6/movies-web-cellcom/assets/45402007/98f02d83-60ae-4dfa-8fc9-4851a0c00d13
+
