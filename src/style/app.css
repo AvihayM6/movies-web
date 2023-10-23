@@ -7,3 +7,9 @@
 .center-content h1 {
     font-size: 1.4rem;
 }
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

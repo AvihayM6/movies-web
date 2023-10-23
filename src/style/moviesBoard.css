@@ -1,5 +1,6 @@
 .movies-board-container {
     display: grid;
     justify-content: center;
-    gap: 100px;
+    gap: 35px;
+    margin-bottom: 100px;
 }
